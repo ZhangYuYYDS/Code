@@ -13,6 +13,7 @@ var longestConsecutive = function (nums) {
     nums.sort((a, b) => a - b);
 
     for (let i = 0; i < len; i++) {
+        // 去重
         if (nums[i] == nums[i + 1]) continue;
         if (nums[i] + 1 == nums[i + 1]) {
             count++;
