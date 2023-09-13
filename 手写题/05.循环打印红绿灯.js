@@ -1,10 +1,7 @@
-function light(color) {
-    console.log(color);
-}
 const task = (timer, color) =>
     new Promise((resolve, reject) => {
         setTimeout(() => {
-            light(color);
+            console.log(color);
             resolve();
         }, timer);
     });
